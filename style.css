@@ -1,0 +1,606 @@
+*{
+    Margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.planodefundo img{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    margin-top: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* LOGOTIPO */
+
+.logotipo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-circulo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #d4ff2f;
+    color: #141414;
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo-texto {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* MENU - CABEÇALHO */
+
+
+.menu ul{
+    display: flex;
+    list-style: none; /* Retira as bolinnhas da lista*/
+    gap: 60px; /* Espaçamenento entre as palavras no Menu*/
+}
+
+.menu a{
+    font-family:"Montserrat", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #9A9AB0;
+
+}
+.menu a:hover{
+    color: #D4FF00;
+}
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    gap: 72px;
+    margin:40px;
+    align-items: center;
+}
+
+.botaocontato button{
+    background: #D4FF00;
+    border-radius: 10px;
+    border: none;
+    color: black;
+    font-size: 22px;
+    font-family:"Montserrat", sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    width: 150px;
+    height: 40px;
+}
+
+.botaocontato button:hover {
+    background: white;
+}
+
+/* APRESENTAÇÃO - BLOCO 1 */
+body {
+    font-family:"Montserrat", sans-serif;
+    background-color: #18181B;
+    color: white;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 2.5% 80px;
+}
+
+.hero {
+   width: min(1100px, 90%);
+    margin: 50px auto 0;
+    display: grid;
+    grid-template-columns: 1.35fr 0.9fr;
+    align-items: center;
+    gap: 70px;
+}
+
+.hero h1 {
+    font-size: clamp(60px, 6vw, 88px);
+    font-weight: 900;
+    letter-spacing: 5px;
+    margin-bottom: 89px;
+}
+
+h1 span {
+    color: #D4FF00;
+}
+.hero p {
+    color: #9A9AB0;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: 3px;
+    font-weight: 500; 
+    margin-bottom: -50px;
+    font-family:"Montserrat", sans-serif;
+    margin-top: -150px;
+}
+
+.fotopessoa img{
+    width: 407px;
+    margin-bottom: 381px;
+     margin-top: -609px;
+     margin-left: 1066px;
+     margin-right: 0px;
+}
+
+/* BOTÃO CONTRATE */
+.botao {
+    display: inline-block;
+    background: #D4FF00;
+    color: #000;
+    text-decoration: none;
+    padding: 14px 25px;
+    border-radius: 10px;
+    font-weight: 700;
+    transition: 0.3s;
+    margin-left: 443px;
+}
+
+
+/* SOBRE MIM - FOTO */
+
+.sectionsobremim {
+    display: flex;
+}
+    
+.sobremim img{
+    width: 380px;
+    margin-bottom: 635px;
+     margin-top: -229px;
+     margin-left: 419px;
+     margin-right: -250px;
+}
+
+.sobre-texto h2 {
+    font-size: 36px;
+    font-weight: 900;
+    margin-top: -1204px;
+    margin-bottom: 233px;
+    padding: 196px;
+    margin-left: 815px;
+    margin-right: -155px;
+}
+
+.sobre-texto p {
+    color: #9A9AB0;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: 3px;
+    font-weight: 500; 
+    margin-left: 218px; 
+    margin-top: -409px;
+    text-align: right;
+    font-family:"Montserrat", sans-serif;
+}
+
+.hero p {
+  color: #9A9AB0;
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: 3px;
+  font-weight: 500;
+  margin-bottom: -50px;
+  font-family: "Montserrat", sans-serif;
+  margin-top: -150px;
+}
+
+.botaoD {
+    display: inline-block;
+    background: #D4FF00;
+    color: #000;
+    text-decoration: none;
+    padding: 14px 25px;
+    border-radius: 10px;
+    font-weight: 700;
+    transition: 0.3s;
+    margin-left: 1302px;
+    margin-top: 31px;
+}
+
+/* MEUS MELHORES SERVIÇOS */ 
+
+.servicos {
+    padding: 80px 80px;
+}
+
+.servicos-titulo {
+    font-size: 36px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 40px;
+    font-family:"Montserrat", sans-serif;
+    font-weight: 900;
+}
+
+
+/* Container que organiza os cards em grade (3 colunas) */
+.servicos-grade {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas de tamanho igual */
+    gap: 20px; /* espaço entre os cards */
+    max-width: 1000px;
+    margin: 0 auto; /* centraliza o grid dentro do bloco */
+}
+
+/* Cada card individual */
+.servicos-card {
+    background-color: #1e1e1e;
+    border: 1px solid #2a2a2a;
+    border-radius: 8px;
+    padding: 30px 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.servicos-icone {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 0 auto 20px auto; /* centraliza e cria espaço abaixo */
+}
+
+.servicos-card h2 {
+    color: #ffffff;
+    font-size: 19px;
+    margin-bottom: 15px;
+}
+
+.servicos-card p {
+    color: #9A9AB0;
+    font-size: 18px;
+    line-height: 1.4;
+    font-weight: 500;
+    font-family:"Montserrat", sans-serif;
+}
+
+/* EXPERIÊNCIA */
+
+.experiencia {
+    background-color: #1b1b20; /* fundo um pouco diferente do bloco anterior */
+    padding: 60px 20px;
+    margin: 0 auto;
+}
+
+.experiencia-titulo {
+    color: #ffffff;
+    font-size: 36px;
+    margin-bottom: 40px;
+    font-weight: 900;
+    text-align: center;
+    font-family:"Montserrat", sans-serif;
+}
+
+/* Linha com todas as barras lado a lado */
+.experiencia-grafico {
+    display: flex;
+    justify-content: center;  /* ← essa linha centraliza o grupo */
+    gap: 26px; /* espaço entre as barras */
+    flex-wrap: wrap; /* quebra linha em telas pequenas */
+
+}
+
+/* Cada "coluna": barra + ícone embaixo */
+.experiencia-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+/* A moldura da barra (o retângulo com borda) */
+.experiencia-barra {
+    width: 50px;
+    height: 200px;
+    border: 2px solid #D4FF00; /* borda verde-limão, igual à imagem */
+    border-radius: 2px;
+    position: relative;
+    overflow: hidden; /* garante que o preenchimento não vaze da borda */
+}
+
+/* O preenchimento em degradê dentro da barra.                    */
+/* "height: var(--nivel)" usa o valor definido no HTML de cada     */
+/* barra (ex: --nivel: 60%) para controlar até onde o degradê vai. */
+
+.experiencia-preenchimento {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: var(--nivel);
+    background: linear-gradient(
+      to top,
+      #8a8a12 0%,          /* cor mais forte na base */
+      rgba(138, 138, 18, 0.5) 60%,
+      rgba(138, 138, 18, 0) 100%  /* esmaece até transparente no topo */
+    );
+  }
+
+.experiencia-icone {
+    width: 28px;
+    height: 28px;
+}
+
+/* PORTIFÓLIO */
+
+.portfolio {
+    padding: 60px 20px;
+}
+
+/* Limita a largura do conteúdo e centraliza na página */
+
+.divportfolio {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.portfolio-titulo {
+    color: #ffffff;
+    font-size: 36px;
+    margin-bottom: 16px;
+    font-weight: 900;
+    text-align: center;
+    font-family:"Montserrat", sans-serif;
+}
+
+.portfolio-subtitulo {
+    color: #9A9AB0;
+    font-size: 16px;
+    line-height: 1.4;
+    max-width: 650px;
+    margin: 0 auto 40px auto; /* centraliza o texto e cria espaço abaixo */
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 3px;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* Grade com os 6 cards: 3 colunas x 2 linhas */
+.portfolio-grade {
+    display: grid;
+    grid-template-columns: repeat(3, 205px);
+    grid-auto-rows: 135px;  
+    gap: 124px;
+    margin-left: 15px; 
+}
+
+/* Cada card/retângulo */
+.portfolio-item {
+    aspect-ratio: 16 / 10; /* mantém a proporção retangular da imagem */
+    border: 2px solid #D4FF00; /* borda verde-limão */
+    border-radius: 12px;
+    overflow: hidden; /* corta a imagem/vídeo nas bordas arredondadas */
+    background-color: #17171b;
+    width: 300px;
+    height: 200px;
+}
+
+/* A imagem (ou vídeo) preenche todo o card, sem distorcer */
+.portfolio-item img,
+.portfolio-item video {
+    width: 95%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+   margin-left: 7px;
+}
+
+/* CLIENTE */
+
+.clientes {
+    background-color: #1e1e24;
+    padding: 60px 0; /* sem padding lateral aqui, quem limita é o wrapper */
+    margin-top: 80px;
+}
+
+.divclientes {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.clientes-titulo {
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    text-align: center;
+}
+
+   /* A "janela": esconde tudo que passar dos lados dela */
+
+.clientes-marquee {
+    overflow: hidden;
+    width: 100%;
+    /* efeito de "esmaecer" nas bordas (opcional, pode remover se não quiser) */
+    mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+}
+
+/* A fileira que se move. width: max-content faz ela ter a largura   */
+/* exata da soma de todos os itens, sem quebrar linha.                */
+.clientes-track {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    width: max-content;
+    animation: rolar-clientes 15s linear infinite;
+}
+
+/* Pausa o movimento quando o mouse passa por cima (opcional) */
+
+.clientes-marquee:hover .clientes-track {
+    animation-play-state: paused;
+}
+
+/* A animação: anda da posição 0 até -50%.*/
+/* -50% é exatamente a largura do 1º conjunto de logos (metade da */
+/* fileira toda, já que duplicamos), por isso o loop fica perfeito. */
+
+@keyframes rolar-clientes {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+}
+
+/* Cada quadrado individual */
+.cliente-item {
+    width: 130px;
+    height: 130px;
+    flex-shrink: 0; /* impede que os quadrados encolham dentro do flex */
+    border: 2px solid #D4FF00;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #1b1b20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cliente-item img {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+}
+
+/* RODAPÉ */
+
+.rodape {
+    padding: 60px 20px 0 20px; /* sem padding embaixo, quem cuida disso é .rodape-inferior */
+}
+
+.rodape-conteudo {
+    margin: 0 auto;
+    text-align: center;
+}
+
+  /* Bolinha com "IES" verde-limão no topo */
+.rodape-logo-circulo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #D4FF00;
+    color: #141414;
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px auto;
+    font-family: "Montserrat", sans-serif;
+}
+
+.rodape-titulo {
+    color: #ffffff;
+    font-size: 36px;
+    margin-bottom: 12px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    text-align: center;
+}
+
+.rodape-subtitulo {
+    color: #9A9AB0;
+    font-size: 16px;
+    line-height: 1.4;
+    max-width: 650px;
+    margin: 0 auto 40px auto; /* centraliza o texto e cria espaço abaixo */
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 3px;
+    font-weight: 500;
+    text-align: center;
+}
+
+  /* Linha com as 4 bolinhas de redes sociais */
+.rodape-redes {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Cada bolinha (círculo vazado com borda verde-limão) */
+.rodape-rede-item {
+    width: 50px;
+    height: 50px;
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease; /* efeito suave ao passar o mouse */
+}
+
+.rodape-rede-item img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Efeito ao passar o mouse na bolinha (opcional, pode remover) */
+
+/* Faixa final: logo à esquerda + copyright centralizado na página */
+.rodape-inferior {
+    position: relative; /* necessário para centralizar o copyright com position: absolute */
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 24px 0;
+    margin-top: 30px;
+    border-top: 3px solid rgba(255, 255, 255, 0.08); /* linha divisória sutil */
+}
+
+.rodape-logo-texto {
+    color: #D4FF00;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Centraliza o texto de copyright em relação à página inteira,   */
+/* não em relação ao espaço que sobrou ao lado da logo.            */
+.rodape-copyright {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #9A9AB0;
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.rodape-copyright strong {
+    color: #D4FF00;
+}
+
+
+
+
+
+
+
