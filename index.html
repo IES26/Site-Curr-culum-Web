@@ -3,466 +3,400 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Portfólio de Isnélem, designer multimídia: animação 2D e 3D, motion design, stop motion e produção audiovisual.">
 
         <title>Isnélem | Designer Multimídia</title> <!-- Título da aba de navegação -->
 
-        <link rel="icon" href="Imagem/IES.png"> <!-- Icone na página - Favicon -->
-
-        <link rel="stylesheet" href="style.css"> <!-- Linkar com o arquivo do CSS -->
+        <link rel="icon" href="Imagem/IES.png"> <!-- Ícone na aba - Favicon -->
 
         <!-- Fonte personalizada - Google Fonts -->
-         <!-- Copiar o nome da fonte que deseja no Google Fonts, escolher a fonte e copiar o código HTML --> 
+        <!-- Copiar o nome da fonte que deseja no Google Fonts, escolher a fonte e copiar o código HTML -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+        <link rel="stylesheet" href="style.css"> <!-- Linkar com o arquivo do CSS -->
     </head>
 
     <body>
-                          
-        <!-- MENU / CABEÇALHO -->
-        <div class="planodefundo">
+
+        <!-- IMAGEM DE FUNDO DO TOPO (apenas decorativa) -->
+        <div class="planodefundo" aria-hidden="true">
             <img src="Imagem/fundo_header.svg" alt="">
         </div>
 
+        <!-- MENU / CABEÇALHO -->
         <header class="cabecalho">
 
-            <div class="logotipo"> 
-
+            <a href="#home" class="logotipo">
                 <span class="logo-circulo">IES</span>
                 <span class="logo-texto">ISNÉLEM</span>
+            </a>
 
-            </div>
+            <!-- Botão "hambúrguer" (☰): só aparece em telas menores (ver CSS) -->
+            <button class="menu-botao" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-area">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
 
-            <nav class="menu">
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Sobre</a></li>
-                    <li><a href="">Serviço</a></li>
-                    <li><a href="">Portifólio</a></li>
-                </ul>
-            </nav>          
-                
-            <div class="botaocontato"> <!-- Botão Superior Contato -->
-                <button>Contato</button>
+            <!-- No computador o menu fica em linha; no celular ele abre e fecha pelo botão ☰ -->
+            <div class="menu-area" id="menu-area">
+
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#portfolio">Portfólio</a></li>
+                    </ul>
+                </nav>
+
+                <a href="#contato" class="botaocontato">Contato</a> <!-- Botão Superior Contato -->
+
             </div>
 
         </header>
 
-        <!-- BLOCO HOME - APRESENTAÇÃO / BANNER -->
+        <main id="home">
 
-        <main id="home"> 
-                           
-            <div class="banner"> 
+            <!-- BLOCO HOME - APRESENTAÇÃO / BANNER -->
+            <section class="hero">
 
-                <div class="infopessoa">
+                <div class="hero-texto">
 
-                    <section class="hero">
+                    <h1>
+                        <span>Isnélem</span><br>
+                        Designer<br>
+                        Multimídia
+                    </h1>
 
-                        <h1>
-                           <span>Isnélem</span><br>
-                            Designer<br>
-                            Multimídia
-                        </h1>
+                    <p>
+                        Sou formada em Design de Animação e estudante de Técnico em Multimídia. Estou construindo minha carreira
+                        criando animações 2D e 3D, Motion Design, Stop Motion e produções audiovisuais. Meu objetivo é desenvolver
+                        experiências visuais criativas e dar vida ao meu propósito de criar conteúdos educativos para o público infantil.
+                    </p>
 
-                        <br>
+                    <a href="#contato" class="botao">Me Contrate Agora</a> <!-- BOTÃO ME CONTRATE -->
 
+                </div>
+
+                <div class="fotopessoa"> <!-- FOTO -->
+                    <img src="Imagem/Foto_bloco1.svg" alt="Foto de Isnélem">
+                </div>
+
+            </section>
+
+            <!-- BLOCO SOBRE MIM -->
+            <section class="sectionsobremim" id="sobre">
+
+                <div class="sobremim">
+                    <img src="Imagem/FOTO2.png" alt="Isnélem">
+                </div>
+
+                <div class="sobre-texto">
+
+                    <h2>Um pouco sobre mim</h2>
+
+                    <!-- Sem <br> aqui: o texto quebra sozinho conforme o tamanho da tela -->
+                    <p>
+                        Sou apaixonada por criatividade, tecnologia e animação. Formada em Design de Animação e estudante de
+                        Técnico em Multimídia, estou construindo minha carreira na criação de experiências visuais por meio de
+                        animação 2D e 3D, Motion Design, Modelagem 3D e produção audiovisual. Meu propósito é usar a criatividade
+                        para transformar ideias em histórias que informem, inspirem e, principalmente, contribuam para a educação
+                        infantil de forma leve e divertida.
+                    </p>
+
+                    <!-- Para o botão baixar o currículo: coloque o PDF na pasta do site e troque o href,
+                         por exemplo: href="Arquivos/curriculo.pdf" download -->
+                    <a href="#contato" class="botaoD">Download CV</a>
+
+                </div>
+
+            </section>
+
+            <!-- MEUS MELHORES SERVIÇOS -->
+            <section class="servicos" id="servicos">
+
+                <h2 class="servicos-titulo">Meus Melhores Serviços</h2>
+
+                <div class="servicos-grade">
+
+                    <div class="servicos-card">
+                        <img src="Imagem/icones/animacao-2d.svg" class="servicos-icone" alt="">
+                        <h3>Animação 2D</h3>
                         <p>
-                            Sou formada em Design de Animação e estudante de Técnico em Multimídia. Estou construindo minha carreira criando
-                            animações 2D e 3D, Motion Design, Stop Motion e produções
-                            audiovisuais. Meu objetivo é desenvolver experiências
-                            visuais criativas e dar vida ao meu propósito de criar
-                            conteúdos educativos para o público infantil.
+                            Criação de animações em 2D para vídeos, apresentações, conteúdos educativos, publicidade e redes sociais, combinando criatividade, narrativa e comunicação visual.
                         </p>
-
-                    </section>
-                
-              
-                    <div class="quem-texto"> <!-- BOTÃO ME CONTRATE -->
-
-                        <a href="#contato" class="botao">
-                            Me Contrate Agora
-                        </a>
                     </div>
 
-                    <!--  FOTO-->
-
-                    <div class="fotopessoa"> 
-                        <img src="Imagem/Foto_bloco1.svg" alt="">
-                    </div>          
-                </div>                              
-                
-                <!-- BLOCO SOBRE MIM-->
-
-                <section class="sectionsobremim">
-
-                    <div>
-
-                        <div class="sobremim">
-                            <img src="Imagem/FOTO2.png" alt="">
-                        </div>
-                        
-                        <div class="sobre-texto">
-
-                            <h2>Um pouco sobre mim</h2>
-
-                            <br>
-
-                            <p class="sobre-texto2">
-
-                                Sou apaixonada por criatividade tecnologia e animação<br>
-                                Formada em Design de Animação e estudante de <br>
-                                Técnico em  Multimídia, estou construindo minha carreira <br>
-                                na criação de experiências visuais por meio de<br>
-                                animação 2D e 3D, Motion Design, Modelagem 3D e<br>
-                                produção audiovisual. Meu propósito é usar a criatividade <br>
-                                para transformar ideias em histórias que informem, <br>
-                                inspirem e, principalmente, contribuam para a educação <br>
-                                infantil de forma leve e divertida.
-
-                            </p>
-
-                            <a href="#contato" class="botaoD">
-                                Download CV
-                            </a>
-                        </div>
-                    </div>
-            
-                </section>
-
-            </div>
-
-            <!-- MEUS MELHORES SERVIÇOS-->
-
-            <div>
-
-                <section class="servicos">
-
-                    <div class="divservicos">
-
-                        <h1 class="servicos-titulo">Meus Melhores Serviços</h1>
-                      
+                    <div class="servicos-card">
+                        <img src="Imagem/icones/modelagem-3d.svg" class="servicos-icone" alt="">
+                        <h3>Modelagem e Animação 3D</h3>
+                        <p>
+                            Desenvolvimento de personagens, objetos e cenários em 3D, além da criação de animações que proporcionam realismo e dão vida aos projetos.
+                        </p>
                     </div>
 
-                    <div class="servicos-grade">
-
-                        <div class="servicos-card">
-
-                            <img src="Imagem/icones/animacao-2d.svg" class="servicos-icone" alt="Ícone Animação 2D">
-
-                            <h2>Animação 2D</h2>
-                            <p>
-                                Criação de animações em 2D para vídeos, apresentações, conteúdos educativos, publicidade e redes sociais, combinando criatividade, narrativa e comunicação visual.
-                            </p>
-                        </div>
-
-                        <div class="servicos-card">
-
-                            <img src="Imagem/icones/modelagem-3d.svg" class="servicos-icone" alt="Ícone Modelagem e Animação 3D">
-
-                            <h2>Modelagem e Animação 3D</h2>
-                            <p>
-                                Desenvolvimento de personagens, objetos e cenários em 3D, além da criação de animações que proporcionam realismo e dão vida aos projetos.
-                            </p>
-                        </div>
-
-                        <div class="servicos-card">
-
-                            <img src="Imagem/icones/motion-design.svg" class="servicos-icone" alt="Ícone Motion Design">
-
-                            <h2>Motion Design</h2>
-                            <p>
-                                Produção de animações gráficas para vídeos institucionais, publicidade, redes sociais e apresentações, utilizando elementos visuais dinâmicos para fortalecer a comunicação.
-                            </p>
-                        </div>
-
-                        <div class="servicos-card">
-                            <img src="Imagem/icones/stop-motion.svg" class="servicos-icone" alt="Ícone Stop Motion">
-
-                            <h2>Stop Motion</h2>
-                            <p>
-                                Criação de animações quadro a quadro com foco em contar histórias de forma criativa e envolvente, aplicadas em projetos educativos, publicitários e artísticos.
-                            </p>
-                        </div>
-
-                        <div class="servicos-card">
-                            <img src="Imagem/icones/producao-video.svg" class="servicos-icone" alt="Ícone Produção e Edição de Vídeos">
-
-                            <h2>Produção e Edição de Vídeos</h2>
-                            <p>
-                                Captação e edição de vídeos para diferentes plataformas, incluindo tratamento de imagem, correção de cor, trilha sonora, legendas e efeitos visuais para conteúdos profissionais.
-                            </p>
-                        </div>
-
-                        <div class="servicos-card">
-                            <img src="Imagem/icones/imagens-aereas.svg" class="servicos-icone" alt="Ícone Captação de Imagens Aéreas">
-
-                            <h2>Captação de Imagens Aéreas</h2>
-                            <p>
-                                Produção de imagens e vídeos aéreos com drones para registrar eventos, empresas, imóveis e projetos audiovisuais, oferecendo novos ângulos e perspectivas.
-                            </p>
-                        </div>
+                    <div class="servicos-card">
+                        <img src="Imagem/icones/motion-design.svg" class="servicos-icone" alt="">
+                        <h3>Motion Design</h3>
+                        <p>
+                            Produção de animações gráficas para vídeos institucionais, publicidade, redes sociais e apresentações, utilizando elementos visuais dinâmicos para fortalecer a comunicação.
+                        </p>
                     </div>
 
-                </section>
+                    <div class="servicos-card">
+                        <img src="Imagem/icones/stop-motion.svg" class="servicos-icone" alt="">
+                        <h3>Stop Motion</h3>
+                        <p>
+                            Criação de animações quadro a quadro com foco em contar histórias de forma criativa e envolvente, aplicadas em projetos educativos, publicitários e artísticos.
+                        </p>
+                    </div>
 
-            </div> 
+                    <div class="servicos-card">
+                        <img src="Imagem/icones/producao-video.svg" class="servicos-icone" alt="">
+                        <h3>Produção e Edição de Vídeos</h3>
+                        <p>
+                            Captação e edição de vídeos para diferentes plataformas, incluindo tratamento de imagem, correção de cor, trilha sonora, legendas e efeitos visuais para conteúdos profissionais.
+                        </p>
+                    </div>
+
+                    <div class="servicos-card">
+                        <img src="Imagem/icones/imagens-aereas.svg" class="servicos-icone" alt="">
+                        <h3>Captação de Imagens Aéreas</h3>
+                        <p>
+                            Produção de imagens e vídeos aéreos com drones para registrar eventos, empresas, imóveis e projetos audiovisuais, oferecendo novos ângulos e perspectivas.
+                        </p>
+                    </div>
+
+                </div>
+
+            </section>
 
             <!-- EXPERIÊNCIA -->
+            <section class="experiencia">
 
-            <div>
+                <h2 class="experiencia-titulo">Experiência</h2>
 
-        
-                <section class="experiencia">
+                <div class="experiencia-grafico">
 
-                    <div class="divexperiencia">
+                    <!-- Cada .experiencia-item = 1 barra + 1 ícone embaixo.        -->
+                    <!-- O atributo style="--nivel: 30%" controla o quanto a barra  -->
+                    <!-- fica "preenchida" pelo degradê. Troque o valor conforme    -->
+                    <!-- seu nível de conhecimento em cada programa (0% a 100%).    -->
 
-                        <h2 class="experiencia-titulo">Experiência</h2>
-
-                    
-                        <div class="experiencia-grafico">
-
-                            <!-- Cada .experiencia-item = 1 barra + 1 ícone embaixo.        -->
-                            <!-- O atributo style="--nivel: 30%" controla o quanto a barra  -->
-                            <!-- fica "preenchida" pelo degradê. Troque o valor conforme    -->
-                            <!-- seu nível de conhecimento em cada programa (0% a 100%).    -->
-
-                            <div class="experiencia-item">
-                                <div class="experiencia-barra" style="--nivel: 10%;">
-
-                                <div class="experiencia-preenchimento"></div>
-                            </div>
-                                <img src="Imagem/Icones de programas/Ps.svg" class="experiencia-icone" alt="Photoshop">
-                            </div>
-
-                            <div class="experiencia-item">
-                                <div class="experiencia-barra" style="--nivel: 20%;">
-                                    
-                                <div class="experiencia-preenchimento"></div>
-                            </div>
-                                <img src="Imagem/Icones de programas/Ae.svg" class="experiencia-icone" alt="AfterEfects">
-                            </div>
-
-                                <div class="experiencia-item">
-                                <div class="experiencia-barra" style="--nivel: 30%;">
-
-                                <div class="experiencia-preenchimento"></div>
-                            </div>
-                                <img src="Imagem/Icones de programas/Ai.svg" class="experiencia-icone" alt="Íllustrator">
-                            </div>
-
-                                <div class="experiencia-item">
-                                <div class="experiencia-barra" style="--nivel: 40%;">
-
-                                <div class="experiencia-preenchimento"></div>
-                            </div>
-                                <img src="Imagem/Icones de programas/An.svg" class="experiencia-icone" alt="Animator">
-                            </div>
-
-                                <div class="experiencia-item">
-                                <div class="experiencia-barra" style="--nivel: 50%;">
-
-                                <div class="experiencia-preenchimento"></div>
-                            </div>
-                                <img src="Imagem/Icones de programas/Au.svg" class="experiencia-icone" alt="Automate">
-                            </div>
-
-                                <div class="experiencia-item">
-                                <div class="experiencia-barra" style="--nivel: 60%;">
-
-                                <div class="experiencia-preenchimento"></div>
-                            </div>
-                                <img src="Imagem/Icones de programas/Ch.svg" class="experiencia-icone" alt="Ch">
-                            </div>
-
-                                <div class="experiencia-item">
-                                <div class="experiencia-barra" style="--nivel: 70%;">
-
-                                <div class="experiencia-preenchimento"></div>
-                            </div>
-                                <img src="Imagem/Icones de programas/Lr.svg" class="experiencia-icone" alt="Lr">
-                            </div>
-
-                                <div class="experiencia-item">
-                                <div class="experiencia-barra" style="--nivel: 80%;">
-
-                                <div class="experiencia-preenchimento"></div>
-                            </div>
-                                <img src="Imagem/Icones de programas/Me.svg" class="experiencia-icone" alt="me">
-                            </div>
-
-                                <div class="experiencia-item">
-                                <div class="experiencia-barra" style="--nivel: 90%;">
-
-                                 <div class="experiencia-preenchimento"></div>
-                            </div>
-                                <img src="Imagem/Icones de programas/Pr.svg" class="experiencia-icone" alt="Premiere">
-                            </div>
-
-                                <div class="experiencia-item">
-                                <div class="experiencia-barra" style="--nivel: 80%;">
-
-                                <div class="experiencia-preenchimento"></div>
-                            </div>
-                                <img src="Imagem/Icones de programas/Figma 1.svg" class="experiencia-icone" alt="Figma">
-                            </div>
-
-                                <div class="experiencia-item">
-                                <div class="experiencia-barra" style="--nivel: 70%;">
-
-                                <div class="experiencia-preenchimento"></div>
-                            </div>
-                                <img src="Imagem/Icones de programas/Blender.svg" class="experiencia-icone" alt="Blender">
-                            </div>
-
-                            <div class="experiencia-item">
-                                <div class="experiencia-barra" style="--nivel: 10%;">
-
-                                <div class="experiencia-preenchimento"></div>
-                            </div>
-                                <img src="Imagem/Icones de programas/Fusion.svg" class="experiencia-icone" alt="Fusion">
-                            </div>
-
-                            <div class="experiencia-item">
-                                <div class="experiencia-barra" style="--nivel: 10%;">
-
-                                <div class="experiencia-preenchimento"></div>
-                            </div>
-                                <img src="Imagem/Icones de programas/Maya.svg" class="experiencia-icone" alt="Maya">
-                            </div>
-
+                    <div class="experiencia-item">
+                        <div class="experiencia-barra" style="--nivel: 10%;">
+                            <div class="experiencia-preenchimento"></div>
                         </div>
+                        <img src="Imagem/Icones de programas/Ps.svg" class="experiencia-icone" alt="Photoshop">
                     </div>
 
-                </section>
-
-            </div>
-                
-           <!-- PORTIFÓLIO -->                                 
-        
-            <div>
-
-                <section class="portfolio">
-
-                    <div class="divportfolio">
-
-                    
-                        <h2 class="portfolio-titulo">Meu Portifólio</h2>
-
-                        <p class="portfolio-subtitulo">
-                            Uma seleção de projetos desenvolvidos durante minha formação em Design de Animação, reunindo criatividade, técnica e experimentação visual.
-                        </p>
-
-                        <div class="portfolio-grade">
-
-                            <!-- Cada .portfolio-item é um card. Troque o <img> por um       -->
-                            <!-- vídeo (veja o exemplo comentado logo abaixo) quando quiser. -->
-
-
-                            <div class="portfolio-item">
-                                <img src="Imagem/Clientes/IES.svg" alt="Projeto 1">
-                            </div>
-
-                            <div class="portfolio-item">
-                                <img src="Imagem/Clientes/IES.svg" alt="Projeto 2">
-                            </div>
-
-                            <div class="portfolio-item">
-                                <img src="Imagem/Clientes/IES.svg" alt="Projeto 3">
-                            </div>
-
-                            <div class="portfolio-item">
-                                <img src="Imagem/Clientes/IES.svg" alt="Projeto 4">
-                            </div>
-
-                            <div class="portfolio-item">
-                                <img src="Imagem/Clientes/IES.svg" alt="Projeto 5">
-                            </div>
-
-                            <div class="portfolio-item">
-                                <img src="Imagem/Clientes/IES.svg" alt="Projeto 6">
-                            </div>
-
-                            <!-- Exemplo de como ficaria um card com VÍDEO no lugar da imagem: -->
-                            <!-- <div class="portfolio-item">
-                            <video src="videos/projeto1.mp4" autoplay muted loop playsinline></video></div>-->
+                    <div class="experiencia-item">
+                        <div class="experiencia-barra" style="--nivel: 20%;">
+                            <div class="experiencia-preenchimento"></div>
                         </div>
-                          
-                    </div> 
+                        <img src="Imagem/Icones de programas/Ae.svg" class="experiencia-icone" alt="After Effects">
+                    </div>
 
-                </section>
+                    <div class="experiencia-item">
+                        <div class="experiencia-barra" style="--nivel: 30%;">
+                            <div class="experiencia-preenchimento"></div>
+                        </div>
+                        <img src="Imagem/Icones de programas/Ai.svg" class="experiencia-icone" alt="Illustrator">
+                    </div>
 
-            </div>                             
-            
-            <!-- CLIENTE -->
+                    <div class="experiencia-item">
+                        <div class="experiencia-barra" style="--nivel: 40%;">
+                            <div class="experiencia-preenchimento"></div>
+                        </div>
+                        <img src="Imagem/Icones de programas/An.svg" class="experiencia-icone" alt="Animate">
+                    </div>
 
-            <div>
+                    <div class="experiencia-item">
+                        <div class="experiencia-barra" style="--nivel: 50%;">
+                            <div class="experiencia-preenchimento"></div>
+                        </div>
+                        <img src="Imagem/Icones de programas/Au.svg" class="experiencia-icone" alt="Audition">
+                    </div>
 
-                <section class="clientes">
-                    <div class="divclientes">
+                    <div class="experiencia-item">
+                        <div class="experiencia-barra" style="--nivel: 60%;">
+                            <div class="experiencia-preenchimento"></div>
+                        </div>
+                        <img src="Imagem/Icones de programas/Ch.svg" class="experiencia-icone" alt="Character Animator">
+                    </div>
 
-                        <h2 class="clientes-titulo">Clientes</h2>
+                    <div class="experiencia-item">
+                        <div class="experiencia-barra" style="--nivel: 70%;">
+                            <div class="experiencia-preenchimento"></div>
+                        </div>
+                        <img src="Imagem/Icones de programas/Lr.svg" class="experiencia-icone" alt="Lightroom">
+                    </div>
 
-                        <!-- .clientes-marquee é a "janela" que esconde o que passa      -->
-                        <!-- dos lados. .clientes-track é a fileira que se move sozinha. -->
+                    <div class="experiencia-item">
+                        <div class="experiencia-barra" style="--nivel: 80%;">
+                            <div class="experiencia-preenchimento"></div>
+                        </div>
+                        <img src="Imagem/Icones de programas/Me.svg" class="experiencia-icone" alt="Media Encoder">
+                    </div>
 
-                        <div class="clientes-marquee">
+                    <div class="experiencia-item">
+                        <div class="experiencia-barra" style="--nivel: 90%;">
+                            <div class="experiencia-preenchimento"></div>
+                        </div>
+                        <img src="Imagem/Icones de programas/Pr.svg" class="experiencia-icone" alt="Premiere Pro">
+                    </div>
+
+                    <div class="experiencia-item">
+                        <div class="experiencia-barra" style="--nivel: 80%;">
+                            <div class="experiencia-preenchimento"></div>
+                        </div>
+                        <img src="Imagem/Icones de programas/Figma 1.svg" class="experiencia-icone" alt="Figma">
+                    </div>
+
+                    <div class="experiencia-item">
+                        <div class="experiencia-barra" style="--nivel: 70%;">
+                            <div class="experiencia-preenchimento"></div>
+                        </div>
+                        <img src="Imagem/Icones de programas/Blender.svg" class="experiencia-icone" alt="Blender">
+                    </div>
+
+                    <div class="experiencia-item">
+                        <div class="experiencia-barra" style="--nivel: 10%;">
+                            <div class="experiencia-preenchimento"></div>
+                        </div>
+                        <img src="Imagem/Icones de programas/Fusion.svg" class="experiencia-icone" alt="Fusion">
+                    </div>
+
+                    <div class="experiencia-item">
+                        <div class="experiencia-barra" style="--nivel: 10%;">
+                            <div class="experiencia-preenchimento"></div>
+                        </div>
+                        <img src="Imagem/Icones de programas/Maya.svg" class="experiencia-icone" alt="Maya">
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- PORTFÓLIO -->
+            <section class="portfolio" id="portfolio">
+
+                <div class="divportfolio">
+
+                    <h2 class="portfolio-titulo">Meu Portfólio</h2>
+
+                    <p class="portfolio-subtitulo">
+                        Uma seleção de projetos desenvolvidos durante minha formação em Design de Animação, reunindo criatividade, técnica e experimentação visual.
+                    </p>
+
+                    <div class="portfolio-grade">
+
+                        <!-- Cada .portfolio-item é um card. Troque o <img> por um       -->
+                        <!-- vídeo (veja o exemplo comentado logo abaixo) quando quiser. -->
+
+                        <div class="portfolio-item">
+                            <img src="Imagem/Clientes/IES.svg" alt="Projeto 1">
+                        </div>
+
+                        <div class="portfolio-item">
+                            <img src="Imagem/Clientes/IES.svg" alt="Projeto 2">
+                        </div>
+
+                        <div class="portfolio-item">
+                            <img src="Imagem/Clientes/IES.svg" alt="Projeto 3">
+                        </div>
+
+                        <div class="portfolio-item">
+                            <img src="Imagem/Clientes/IES.svg" alt="Projeto 4">
+                        </div>
+
+                        <div class="portfolio-item">
+                            <img src="Imagem/Clientes/IES.svg" alt="Projeto 5">
+                        </div>
+
+                        <div class="portfolio-item">
+                            <img src="Imagem/Clientes/IES.svg" alt="Projeto 6">
+                        </div>
+
+                        <!-- Exemplo de como ficaria um card com VÍDEO no lugar da imagem: -->
+                        <!-- <div class="portfolio-item">
+                            <video src="videos/projeto1.mp4" autoplay muted loop playsinline></video>
+                        </div> -->
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- CLIENTES -->
+            <section class="clientes">
+
+                <div class="divclientes">
+
+                    <h2 class="clientes-titulo">Clientes</h2>
+
+                    <!-- .clientes-marquee é a "janela" que esconde o que passa      -->
+                    <!-- dos lados. .clientes-track é a fileira que se move sozinha. -->
+
+                    <div class="clientes-marquee">
                         <div class="clientes-track">
 
-                        <!-- ============ 1º CONJUNTO DE LOGOS ============ -->
-                        <div class="cliente-item">
-                            <img src="Imagem/Clientes/IES.svg" alt="Cliente 1">
-                        </div>
-                        <div class="cliente-item">
-                            <img src="Imagem/Clientes/IES.svg" alt="Cliente 2">
-                        </div>
-                        <div class="cliente-item">
-                        <img src="Imagem/Clientes/IES.svg" alt="Cliente 3">
-                        </div>
-                        <div class="cliente-item">
-                        <img src="Imagem/Clientes/IES.svg" alt="Cliente 4">
-                        </div>
+                            <!-- ============ 1º CONJUNTO DE LOGOS ============ -->
+                            <div class="cliente-item">
+                                <img src="Imagem/Clientes/IES.svg" alt="Cliente 1">
+                            </div>
+                            <div class="cliente-item">
+                                <img src="Imagem/Clientes/IES.svg" alt="Cliente 2">
+                            </div>
+                            <div class="cliente-item">
+                                <img src="Imagem/Clientes/IES.svg" alt="Cliente 3">
+                            </div>
+                            <div class="cliente-item">
+                                <img src="Imagem/Clientes/IES.svg" alt="Cliente 4">
+                            </div>
 
-                        <!-- ============ 2º CONJUNTO (CÓPIA IDÊNTICA) ============ -->
-                        <!-- Essa repetição é OBRIGATÓRIA para o loop ficar sem      -->
-                        <!-- "salto" visível. Se adicionar/remover uma logo, faça    -->
-                        <!-- a mesma alteração nos dois conjuntos, na mesma ordem.   -->
-                        <div class="cliente-item" aria-hidden="true">
-                        <img src="Imagem/Clientes/IES.svg" alt="">
-                        </div>
-                        <div class="cliente-item" aria-hidden="true">
-                            <img src="Imagem/Clientes/IES.svg" alt="">
-                        </div>
-                        <div class="cliente-item" aria-hidden="true">
-                        <img src="Imagem/Clientes/IES.svg" alt="">
-                        </div>
-                        <div class="cliente-item" aria-hidden="true">
-                        <img src="Imagem/Clientes/IES.svg" alt="">
-                    </div>
+                            <!-- ============ 2º CONJUNTO (CÓPIA IDÊNTICA) ============ -->
+                            <!-- Essa repetição é OBRIGATÓRIA para o loop ficar sem      -->
+                            <!-- "salto" visível. Se adicionar/remover uma logo, faça    -->
+                            <!-- a mesma alteração nos dois conjuntos, na mesma ordem.   -->
+                            <div class="cliente-item" aria-hidden="true">
+                                <img src="Imagem/Clientes/IES.svg" alt="">
+                            </div>
+                            <div class="cliente-item" aria-hidden="true">
+                                <img src="Imagem/Clientes/IES.svg" alt="">
+                            </div>
+                            <div class="cliente-item" aria-hidden="true">
+                                <img src="Imagem/Clientes/IES.svg" alt="">
+                            </div>
+                            <div class="cliente-item" aria-hidden="true">
+                                <img src="Imagem/Clientes/IES.svg" alt="">
+                            </div>
 
-                </div> <!-- fecha .clientes-track -->
-            </div> <!-- fecha .clientes-marquee -->
+                        </div> <!-- fecha .clientes-track -->
+                    </div> <!-- fecha .clientes-marquee -->
 
-                    </div> <!-- fecha .divclientes -->
+                </div> <!-- fecha .divclientes -->
 
-                </section>
+            </section>
 
-            </div>
-       
-        </main>    
-    
-        <!-- RODAPÉ -->
+        </main>
 
-        <footer class="rodape">
+        <!-- RODAPÉ / CONTATO -->
+        <footer class="rodape" id="contato">
+
             <div class="rodape-conteudo">
 
                 <div class="rodape-logo-circulo">IES</div>
 
-                <h2 class="rodape-titulo">Meus Melhores Serviços</h2>
+                <h2 class="rodape-titulo">Vamos Conversar?</h2>
 
                 <p class="rodape-subtitulo">
                     Um convite aberto para se conectar e explorar oportunidades de colaboração
-                    no meu site de portifólio pessoal.
+                    no meu site de portfólio pessoal.
                 </p>
 
                 <div class="rodape-redes">
@@ -472,15 +406,15 @@
                     </a>
 
                     <a href="https://www.linkedin.com/in/isn%C3%A9lem-espirito-santo-9652aa427/" class="rodape-rede-item" target="_blank" rel="noopener noreferrer">
-                        <img src="Imagem/Redes Sociais/Linkedin1.svg" alt="Linkedin">
+                        <img src="Imagem/Redes Sociais/Linkedin1.svg" alt="LinkedIn">
                     </a>
 
                     <a href="https://www.tiktok.com/@ies9602" class="rodape-rede-item" target="_blank" rel="noopener noreferrer">
-                        <img src="Imagem/Redes Sociais/Tiktok1.svg" alt="Tiktok">
+                        <img src="Imagem/Redes Sociais/Tiktok1.svg" alt="TikTok">
                     </a>
 
                     <a href="https://github.com/IES26?tab=projects" class="rodape-rede-item" target="_blank" rel="noopener noreferrer">
-                        <img src="Imagem/Redes Sociais/guthb1.svg" alt="Guthab">
+                        <img src="Imagem/Redes Sociais/guthb1.svg" alt="GitHub">
                     </a>
 
                     <a href="https://www.behance.net/isnelemesanto" class="rodape-rede-item" target="_blank" rel="noopener noreferrer">
@@ -495,16 +429,39 @@
                         <img src="Imagem/Redes Sociais/E-mail.svg" alt="E-mail">
                     </a>
 
-                </div> 
+                </div>
 
-            </div> 
+            </div>
 
             <div class="rodape-inferior">
                 <span class="rodape-logo-texto">IES</span>
-                    <p class="rodape-copyright">© 2026 — Desenvolvido por <strong>IES</strong></p>
+                <p class="rodape-copyright">© 2026 — Desenvolvido por <strong>IES</strong></p>
             </div>
 
         </footer>
+
+        <!-- MENU DO CELULAR: abre e fecha ao clicar no botão ☰ -->
+        <script>
+            const cabecalho = document.querySelector(".cabecalho");
+            const botaoMenu = document.querySelector(".menu-botao");
+
+            function alternarMenu(abrir) {
+                cabecalho.classList.toggle("menu-aberto", abrir);
+                botaoMenu.setAttribute("aria-expanded", abrir);
+                botaoMenu.setAttribute("aria-label", abrir ? "Fechar menu" : "Abrir menu");
+            }
+
+            botaoMenu.addEventListener("click", function () {
+                alternarMenu(!cabecalho.classList.contains("menu-aberto"));
+            });
+
+            // Fecha o menu depois de clicar em um link
+            document.querySelectorAll(".menu-area a").forEach(function (link) {
+                link.addEventListener("click", function () {
+                    alternarMenu(false);
+                });
+            });
+        </script>
 
     </body>
 </html>
